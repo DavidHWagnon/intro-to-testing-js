@@ -12,14 +12,17 @@ describe('helloWorld', function() {
     it("should never return 'undefined' when called", function() {
       expect(helloWorld()).not.toBe(undefined);
     });
-    it("should return the string 'Hello, Jane!' when passed the argument of 'Jane", function() {
+    it("should return the string 'Hello, Jane!' when passed the argument of 'Jane'", function() {
         expect(helloWorld("Jane")).toBe("Hello, Jane!");
     });
-    it("should return the string 'Hello, Alex!' when passed the argument of 'Jane", function() {
+    it("should return the string 'Hello, Alex!' when passed the argument of 'Alex'", function() {
         expect(helloWorld("Alex")).toBe("Hello, Alex!");
     });
-    it("should return the string 'Hello, Pat!' when passed the argument of 'Jane", function() {
+    it("should return the string 'Hello, Pat!' when passed the argument of 'Pat'", function() {
         expect(helloWorld("Pat")).toBe("Hello, Pat!");
+    });
+    it("should return the string 'Hello, World!' when passed the argument of true", function() {
+        expect(helloWorld(true)).toBe("Hello, World!");
     });
 });
 
