@@ -1,9 +1,17 @@
 // helloWorld function 
-function helloWorld() {
-    return "Hello, World!";
+function helloWorld(input) {
+    if(input==="Alex"){
+        return "Hello, Alex!"
+    }
+    if(input==="Jane"){
+        return "Hello, Jane!"
+    }
+    else{
+        return "";
+    }
 }
 
 //addOne
-function addOne(input){
-    return input + 1;
-}
+//function addOne(input){
+//     return input + 1;
+// }
