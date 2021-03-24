@@ -18,6 +18,9 @@ describe('helloWorld', function() {
     it("should return the string 'Hello, Alex!' when passed the argument of 'Jane", function() {
         expect(helloWorld("Alex")).toBe("Hello, Alex!");
     });
+    it("should return the string 'Hello, Pat!' when passed the argument of 'Jane", function() {
+        expect(helloWorld("Pat")).toBe("Hello, Pat!");
+    });
 });
 
 // describe('addOne', function(){

@@ -6,6 +6,9 @@ function helloWorld(input) {
     if(input==="Jane"){
         return "Hello, Jane!"
     }
+    if(input==="Pat"){
+        return "Hello, Pat!"
+    }
     else{
         return "";
     }
