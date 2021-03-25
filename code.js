@@ -30,12 +30,25 @@ function isEven(input){
 }
 
 function isVowel(input){
-
-    if(input == "a"||input=="A"||input == "e"||input=="i"||input=="o"||input=="u"){
+    if(typeof input == 'number'){
+        return false;
+    }
+    if(input == undefined){
+        return false;
+    }
+    if(input.toString().toLowerCase() === "a"||input.toString().toLowerCase() === "e"||input.toString().toLowerCase() === "i"||input.toString().toLowerCase() === "o"||input.toString().toLowerCase() === "u"){
         return true;
     }
     else{
         return false;
+    }
+}
+function add(input, put){
+    if(Number.isNaN(input)&&Number.isNaN(put)){
+        return NaN;
+    }
+    else{
+        return parseFloat(input)+parseFloat(put);
     }
 }
 //addOne
